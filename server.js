@@ -4,9 +4,9 @@ const ShortUrl = require('./models/shortUrl');
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/urlShortener', {
+mongoose.connect(`mongodb+srv://nandunagireddy2801:6yuKDOhdRDAyKeZz@urlshortener.9qbfylu.mongodb.net/urlShortener`, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
 });
 
 // Set up the view engine and middleware
